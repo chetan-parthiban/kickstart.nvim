@@ -562,6 +562,12 @@ require('lazy').setup({
           end,
         },
       }
+      require('lspconfig')['pyright'].setup {
+        capabilities = capabilities,
+      }
+      require('lspconfig')['ruff'].setup {
+        capabilities = capabilities,
+      }
     end,
   },
 
